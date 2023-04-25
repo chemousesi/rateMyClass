@@ -5,17 +5,17 @@ const articleRouter = require('./routes/articles')
 
 const app = express()
 
-mongoose.set('strictQuery', true);
+//mongoose.set('strictQuery', true);
 // connection de la base de données
-mongoose.connect('mongodb://127.0.0.1/blog', {
-    useNewUrlParser: true,useUnifiedTopology: true
+/*mongoose.connect('mongodb://127.0.0.1/blog', {
+    useNewUrlParser: true, useUnifiedTopology: true
 }, (err) => {
     if (err) {
         console.log(err)
     } else {
         console.log('connected to database')
     }
-})
+})*/
 
 app.set('view engine', 'ejs')
 // this line is used to get the data from the form
