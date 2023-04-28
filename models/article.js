@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 
 
 const articleSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        required: true
+    },
     title: {
         type: String,
         required: true
@@ -16,7 +20,7 @@ const articleSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    } 
+    }
 })
 
 module.exports = mongoose.model('Article', articleSchema)

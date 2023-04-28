@@ -1,4 +1,41 @@
 [] mettre des listes pour les champs filières
-[] designd e la base de données
+[X] designd e la base de données
+[] Make requests to make the data base
 [] publication des premiers articles
+
+
+----------
+architecture de la base de données 
+article 
+
+
+user :
+- id - PK
+- username
+- mot de passe
+
+course: // insérés
+- id - integer
+- ref - text PK
+- name - text
+- rating - flaot sur 5
+- nb reviews - integer
+
+Major (filière): 
+id - integer
+ref - integer not null  
+name - text not null 
+
+Rating : 
+user_id - Foreign Key 
+course_ref - text Foreigh Key
+value - integer
+
+Article : // added to the db
+- user_id - integer FK 
+- ref - text FK 
+- date - date
+- title - text 
+- description - text 
+- content - text 
 
