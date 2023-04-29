@@ -1,18 +1,26 @@
-[] mettre des listes pour les champs filières
+[] mettre des listes déroulantes pour les champs filières
 [X] designd e la base de données
-[] Make requests to make the data base
-[] publication des premiers articles
-
+[X] Make requests to make the data base
+[] finish adding tables to the database
+[] publication des premiers articles et formatage du fihcier excel
+[] make the save button in new work 
+[ ] be able to show articles and course ratings
+[] make the user and the rating tables in the database
 
 ----------
 architecture de la base de données 
 article 
 
-
 user :
 - id - PK
 - username
 - mot de passe
+
+Rating : // sur 5 étoiles 
+user_id - Foreign Key 
+course_ref - text Foreigh Key
+value - integer
+
 
 course: // insérés
 - id - integer
@@ -21,17 +29,13 @@ course: // insérés
 - rating - flaot sur 5
 - nb reviews - integer
 
-Major (filière): 
+Major (filière): // inséré
 id - integer
 ref - integer not null  
 name - text not null 
 
-Rating : 
-user_id - Foreign Key 
-course_ref - text Foreigh Key
-value - integer
 
-Article : // added to the db
+Article : // added to the db //review 
 - user_id - integer FK 
 - ref - text FK 
 - date - date

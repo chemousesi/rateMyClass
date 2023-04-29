@@ -89,3 +89,19 @@ INSERT INTO course (id, ref, name) VALUES
 (60, 'STIC101', 'Tables Rondes métiers'),
 (61, 'TSIA202', 'Séries chronologiques');
 
+INSERT INTO major(id, ref, name) VALUES
+  (1, 'MODS', 'Marchés, organisation, data, stratégie'),
+  (2, 'IMG', 'Image'),
+  (3, 'SD', 'Science des données'),
+  (4, 'TSIA', 'Traitement du signal pour l’intelligence artificielle'),
+  (5, 'ACCQ', 'Algèbre appliquée'),
+  (6, 'MITRO', 'Mathématiques, informatique théorique et recherche opérationnelle'),
+  (7, 'MACS', 'Modélisation aléatoire et calcul scientifique'),
+  (8, 'GIN', 'Grandes infrastructures numériques'),
+  (9, 'RIO', 'Réseaux mobiles et internet des objets'),
+  (10, 'SR2I', 'Sécurité des réseaux et infrastructures informatiques'),
+  (11, 'TELECOM', 'Télécommunications : des données aux systèmes'),
+  (12, '3D', '3D et systèmes interactifs'),
+  (13, 'SE', 'Systèmes embarqués'),
+  (14, 'SLR', 'Systèmes logiciels répartis');
+

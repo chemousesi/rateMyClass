@@ -3,12 +3,16 @@
     <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
 </div>
 <div class="form-group">
+    <label for="major">Filière</label>
+    <textarea name="major" id="major" class="form-control"><%= article.ref %></textarea>
+</div>
+<div class="form-group">
     <label for="Description">Description/Filières</label>
     <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
 </div>
 <div class="form-group">
     <label for="markdown">Avis</label>
-    <textarea required name="markdown" id="makdown" class="form-control"><%= article.markdown %></textarea>
+    <textarea required name="markdown" id="makdown" class="form-control"><%= article.content %></textarea>
 </div>
 
 <div class="mt-4">
